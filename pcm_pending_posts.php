@@ -27,7 +27,7 @@ function pcm_pending_post_setup_pp() {
 	// default options
 	$o = Array(
 		PCM_PRIMARY_EDITOR_KEY => '',
-		PCM_SECONDARY_EDITOR_KEY => 'gregory@pcmnw.com'
+		PCM_SECONDARY_EDITOR_KEY => 'gregory@nwempire.com'
 		);
 
 	add_option(PCM_OPTION_GROUP_PP, $o);
@@ -88,7 +88,7 @@ function new_pending_post_pp($post) {
 	$curr_user	= wp_get_current_user();
 	$recipients	= '';
 	$subject	= 'New Pending Post: '.get_bloginfo( 'name' );
-	$headers	= 'From: Andy <andy@pcmnw.com>'.$crlf."Content-Type: text/html".$crlf;
+	$headers	= 'From: Andy <andy@kingmagsulit.com>'.$crlf."Content-Type: text/html".$crlf;
 
 	// get to: from options
 	$o = get_option(PCM_OPTION_GROUP_PP);
